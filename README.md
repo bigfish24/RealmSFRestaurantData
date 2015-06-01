@@ -29,3 +29,18 @@ Data model structure:
   * restaurant: `ABFRestaurantObject`
   * date: `NSDate`
   * violationDescription: `NSString`
+
+####Installation
+RealmSFRestaurantData is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod "RealmSFRestaurantData"
+
+From your project:
+```objc
+#import "SFRestaurantScores.h"
+...
+RLMRealm *restaurantRealm = [RLMRealm realmWithPath:ABFRestaurantScoresPath()];
+
+RLMResults *restaurants = [ABFRestaurantObject allObjectsInRealm:restaurantRealm];
+```
