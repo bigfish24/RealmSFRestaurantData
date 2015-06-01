@@ -12,6 +12,11 @@
 #import "ABFRestaurantObject.h"
 #import "ABFViolationObject.h"
 
-static inline NSString * ABFRestaurantScoresPath() {
+/**
+ *  Retrieve the path for the prebuilt SFRestaurantScores Realm file
+ *
+ *  @return path to SFRestaurantScores.realm
+ */
+NSString * ABFRestaurantScoresPath() {
     return [[NSBundle mainBundle] pathForResource:@"SFRestaurantScores" ofType:@"realm"];
 }
