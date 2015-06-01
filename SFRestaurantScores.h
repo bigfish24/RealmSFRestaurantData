@@ -17,6 +17,6 @@
  *
  *  @return path to SFRestaurantScores.realm
  */
-NSString * ABFRestaurantScoresPath() {
+static NSString * ABFRestaurantScoresPath() {
     return [[NSBundle mainBundle] pathForResource:@"SFRestaurantScores" ofType:@"realm"];
 }
