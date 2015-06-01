@@ -38,7 +38,7 @@ it, simply add the following line to your Podfile:
 
 From your project:
 ```objc
-#import "SFRestaurantScores.h"
+#import <RealmSFRestaurantData/SFRestaurantScores.h>
 ...
 RLMRealm *restaurantRealm = [RLMRealm realmWithPath:ABFRestaurantScoresPath()];
 
