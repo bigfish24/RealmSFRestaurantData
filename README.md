@@ -1,2 +1,4 @@
 # RealmSFRestaurantData
-San Francisco Restaurant Score Data In Realm
+Prebuilt Realm dataset composed of San Francisco restaurant scores
+
+[Data Source](https://data.sfgov.org/data?search=restaurants)
