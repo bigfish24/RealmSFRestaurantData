@@ -49,3 +49,5 @@ RLMRealm *restaurantRealm = [RLMRealm realmWithPath:ABFRestaurantScoresPath()];
 
 RLMResults *restaurants = [ABFRestaurantObject allObjectsInRealm:restaurantRealm];
 ```
+####Demo
+An example project that uses `RealmSFRestaurantData` is provided in the [ABFRealmSearchViewController](https://github.com/bigfish24/ABFRealmSearchViewController) repo. To install follow the instructions provided.
