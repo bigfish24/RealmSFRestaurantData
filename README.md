@@ -36,7 +36,7 @@ it, simply add the following line to your Podfile:
 ```
 pod "RealmSFRestaurantData"
 ```
-Cocoapods has a [reported issue](https://github.com/CocoaPods/CocoaPods/issues/3557) that overwrites the file permissions for resources included with the pod. To fix perform this call after `pod install`:
+Cocoapods has a [reported issue](https://github.com/CocoaPods/CocoaPods/issues/3557) that overwrites the file permissions for resources included with the pod. To fix, perform this call after `pod install`:
 ```
 chmod 644 Pods/RealmSFRestaurantData/SFRestaurantScores.realm
 ```
