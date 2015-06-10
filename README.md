@@ -4,7 +4,7 @@ Prebuilt Realm dataset composed of San Francisco restaurant scores
 [Data Source](https://data.sfgov.org/data?search=restaurants)
 
 ####Data Model
-RLMObject subclasses corresponding to the data model are included in the objects folder. 
+`RLMObject` subclasses corresponding to the data model are included in the objects folder. 
 
 Data model structure:
 
@@ -31,10 +31,15 @@ Data model structure:
   * violationDescription: `NSString`
 
 ####Installation
-RealmSFRestaurantData is available through [CocoaPods](http://cocoapods.org). To install
+`RealmSFRestaurantData` is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
-
-    pod "RealmSFRestaurantData"
+```
+pod "RealmSFRestaurantData"
+```
+Cocoapods has a [reported issue](https://github.com/CocoaPods/CocoaPods/issues/3557) that overwrites the file permissions for resources included with the pod. To fix, perform this call after `pod install`:
+```
+chmod 644 Pods/RealmSFRestaurantData/SFRestaurantScores.realm
+```
 
 From your project:
 ```objc
@@ -44,3 +49,5 @@ RLMRealm *restaurantRealm = [RLMRealm realmWithPath:ABFRestaurantScoresPath()];
 
 RLMResults *restaurants = [ABFRestaurantObject allObjectsInRealm:restaurantRealm];
 ```
+####Demo
+An example project that uses `RealmSFRestaurantData` is provided in the [ABFRealmSearchViewController](https://github.com/bigfish24/ABFRealmSearchViewController) repo. To install follow the instructions provided.
