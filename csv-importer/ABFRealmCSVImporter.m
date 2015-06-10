@@ -42,12 +42,13 @@
 
 + (NSArray *)getRowsFromCSVWithName:(NSString *)name
 {
-    NSString *csvPath = [[NSBundle mainBundle] pathForResource:name
-                                                        ofType:@"csv"];
+    NSString *currentPath = [[NSFileManager defaultManager] currentDirectoryPath];
+    
+    NSString *fullPath = [NSString stringWithFormat:@"%@/raw-data/%@.csv",currentPath,name];
     
     NSError *error = nil;
     
-    NSString *csvString = [NSString stringWithContentsOfFile:csvPath
+    NSString *csvString = [NSString stringWithContentsOfFile:fullPath
                                                     encoding:NSASCIIStringEncoding
                                                        error:&error];
     
@@ -90,7 +91,7 @@
                 
                 column = [column stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
                 
-                column = [column stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]];
+                column = [column stringByReplacingOccurrencesOfString:@"\"" withString:@""];
                 
                 if (index == 0) {
                     restaurantObject.businessId = column;
@@ -151,7 +152,7 @@
                 
                 column = [column stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
                 
-                column = [column stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]];
+                column = [column stringByReplacingOccurrencesOfString:@"\"" withString:@""];
                 
                 if (index == 0) {
                     ABFRestaurantObject *restaurant = [ABFRestaurantObject objectForPrimaryKey:column];
@@ -217,7 +218,7 @@
                 
                 column = [column stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
                 
-                column = [column stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]];
+                column = [column stringByReplacingOccurrencesOfString:@"\"" withString:@""];
                 
                 if (index == 0) {
                     ABFRestaurantObject *restaurant = [ABFRestaurantObject objectForPrimaryKey:column];

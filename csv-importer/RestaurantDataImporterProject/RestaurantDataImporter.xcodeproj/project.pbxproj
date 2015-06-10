@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		618D6FDE40317C819528FCDC /* libPods-RestaurantDataImporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA2288FDAA0E7D984BF7922 /* libPods-RestaurantDataImporter.a */; };
+		A020A8BF1B27BE8D00785A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8BE1B27BE8D00785A79 /* main.m */; };
+		A020A8C71B27BFA200785A79 /* ABFRealmCSVImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8C61B27BFA200785A79 /* ABFRealmCSVImporter.m */; };
+		A020A8CF1B27BFAC00785A79 /* ABFInspectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CA1B27BFAC00785A79 /* ABFInspectionObject.m */; };
+		A020A8D01B27BFAC00785A79 /* ABFRestaurantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CC1B27BFAC00785A79 /* ABFRestaurantObject.m */; };
+		A020A8D11B27BFAC00785A79 /* ABFViolationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CE1B27BFAC00785A79 /* ABFViolationObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A020A8B91B27BE8D00785A79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BA2288FDAA0E7D984BF7922 /* libPods-RestaurantDataImporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RestaurantDataImporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59793F863C3B7731D599783E /* Pods-RestaurantDataImporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantDataImporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantDataImporter/Pods-RestaurantDataImporter.debug.xcconfig"; sourceTree = "<group>"; };
+		A020A8BB1B27BE8D00785A79 /* RestaurantDataImporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RestaurantDataImporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		A020A8BE1B27BE8D00785A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A020A8C51B27BFA200785A79 /* ABFRealmCSVImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABFRealmCSVImporter.h; path = ../../ABFRealmCSVImporter.h; sourceTree = "<group>"; };
+		A020A8C61B27BFA200785A79 /* ABFRealmCSVImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABFRealmCSVImporter.m; path = ../../ABFRealmCSVImporter.m; sourceTree = "<group>"; };
+		A020A8C91B27BFAC00785A79 /* ABFInspectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFInspectionObject.h; sourceTree = "<group>"; };
+		A020A8CA1B27BFAC00785A79 /* ABFInspectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFInspectionObject.m; sourceTree = "<group>"; };
+		A020A8CB1B27BFAC00785A79 /* ABFRestaurantObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFRestaurantObject.h; sourceTree = "<group>"; };
+		A020A8CC1B27BFAC00785A79 /* ABFRestaurantObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFRestaurantObject.m; sourceTree = "<group>"; };
+		A020A8CD1B27BFAC00785A79 /* ABFViolationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFViolationObject.h; sourceTree = "<group>"; };
+		A020A8CE1B27BFAC00785A79 /* ABFViolationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFViolationObject.m; sourceTree = "<group>"; };
+		F17CC13EA092D92E2D5176C5 /* Pods-RestaurantDataImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantDataImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantDataImporter/Pods-RestaurantDataImporter.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A020A8B81B27BE8D00785A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618D6FDE40317C819528FCDC /* libPods-RestaurantDataImporter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15712354BC4B6951DCD87828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59793F863C3B7731D599783E /* Pods-RestaurantDataImporter.debug.xcconfig */,
+				F17CC13EA092D92E2D5176C5 /* Pods-RestaurantDataImporter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2428EDCC36D419AA1D68BA50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA2288FDAA0E7D984BF7922 /* libPods-RestaurantDataImporter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A020A8B21B27BE8D00785A79 = {
+			isa = PBXGroup;
+			children = (
+				A020A8BD1B27BE8D00785A79 /* RestaurantDataImporter */,
+				A020A8BC1B27BE8D00785A79 /* Products */,
+				15712354BC4B6951DCD87828 /* Pods */,
+				2428EDCC36D419AA1D68BA50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A020A8BC1B27BE8D00785A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A020A8BB1B27BE8D00785A79 /* RestaurantDataImporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A020A8BD1B27BE8D00785A79 /* RestaurantDataImporter */ = {
+			isa = PBXGroup;
+			children = (
+				A020A8C81B27BFAC00785A79 /* objects */,
+				A020A8C51B27BFA200785A79 /* ABFRealmCSVImporter.h */,
+				A020A8C61B27BFA200785A79 /* ABFRealmCSVImporter.m */,
+				A020A8BE1B27BE8D00785A79 /* main.m */,
+			);
+			path = RestaurantDataImporter;
+			sourceTree = "<group>";
+		};
+		A020A8C81B27BFAC00785A79 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				A020A8C91B27BFAC00785A79 /* ABFInspectionObject.h */,
+				A020A8CA1B27BFAC00785A79 /* ABFInspectionObject.m */,
+				A020A8CB1B27BFAC00785A79 /* ABFRestaurantObject.h */,
+				A020A8CC1B27BFAC00785A79 /* ABFRestaurantObject.m */,
+				A020A8CD1B27BFAC00785A79 /* ABFViolationObject.h */,
+				A020A8CE1B27BFAC00785A79 /* ABFViolationObject.m */,
+			);
+			name = objects;
+			path = ../../../objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A020A8BA1B27BE8D00785A79 /* RestaurantDataImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A020A8C21B27BE8D00785A79 /* Build configuration list for PBXNativeTarget "RestaurantDataImporter" */;
+			buildPhases = (
+				9E9DA6A6A3B7D6DEA3ECF9B0 /* Check Pods Manifest.lock */,
+				A020A8B71B27BE8D00785A79 /* Sources */,
+				A020A8B81B27BE8D00785A79 /* Frameworks */,
+				A020A8B91B27BE8D00785A79 /* CopyFiles */,
+				D31C5B99AAC1D0E483A59684 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestaurantDataImporter;
+			productName = RestaurantDataImporter;
+			productReference = A020A8BB1B27BE8D00785A79 /* RestaurantDataImporter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A020A8B31B27BE8D00785A79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Adam Fish";
+				TargetAttributes = {
+					A020A8BA1B27BE8D00785A79 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = A020A8B61B27BE8D00785A79 /* Build configuration list for PBXProject "RestaurantDataImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A020A8B21B27BE8D00785A79;
+			productRefGroup = A020A8BC1B27BE8D00785A79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A020A8BA1B27BE8D00785A79 /* RestaurantDataImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E9DA6A6A3B7D6DEA3ECF9B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D31C5B99AAC1D0E483A59684 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestaurantDataImporter/Pods-RestaurantDataImporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A020A8B71B27BE8D00785A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A020A8C71B27BFA200785A79 /* ABFRealmCSVImporter.m in Sources */,
+				A020A8D01B27BFAC00785A79 /* ABFRestaurantObject.m in Sources */,
+				A020A8BF1B27BE8D00785A79 /* main.m in Sources */,
+				A020A8CF1B27BFAC00785A79 /* ABFInspectionObject.m in Sources */,
+				A020A8D11B27BFAC00785A79 /* ABFViolationObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A020A8C01B27BE8D00785A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A020A8C11B27BE8D00785A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A020A8C31B27BE8D00785A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59793F863C3B7731D599783E /* Pods-RestaurantDataImporter.debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A020A8C41B27BE8D00785A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17CC13EA092D92E2D5176C5 /* Pods-RestaurantDataImporter.release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A020A8B61B27BE8D00785A79 /* Build configuration list for PBXProject "RestaurantDataImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A020A8C01B27BE8D00785A79 /* Debug */,
+				A020A8C11B27BE8D00785A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A020A8C21B27BE8D00785A79 /* Build configuration list for PBXNativeTarget "RestaurantDataImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A020A8C31B27BE8D00785A79 /* Debug */,
+				A020A8C41B27BE8D00785A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A020A8B31B27BE8D00785A79 /* Project object */;
+}
