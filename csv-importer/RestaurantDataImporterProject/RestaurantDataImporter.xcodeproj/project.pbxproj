@@ -13,15 +13,21 @@
 		A020A8CF1B27BFAC00785A79 /* ABFInspectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CA1B27BFAC00785A79 /* ABFInspectionObject.m */; };
 		A020A8D01B27BFAC00785A79 /* ABFRestaurantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CC1B27BFAC00785A79 /* ABFRestaurantObject.m */; };
 		A020A8D11B27BFAC00785A79 /* ABFViolationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A020A8CE1B27BFAC00785A79 /* ABFViolationObject.m */; };
+		A0A087541B28D2F4007AB6B6 /* businesses.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0A0874E1B28D228007AB6B6 /* businesses.csv */; };
+		A0A087551B28D2F6007AB6B6 /* inspections.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0A0874F1B28D228007AB6B6 /* inspections.csv */; };
+		A0A087561B28D2F8007AB6B6 /* violations.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = A0A087501B28D228007AB6B6 /* violations.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A020A8B91B27BE8D00785A79 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = usr/share/man/man1;
-			dstSubfolderSpec = 0;
+			dstPath = "raw-data";
+			dstSubfolderSpec = 16;
 			files = (
+				A0A087541B28D2F4007AB6B6 /* businesses.csv in CopyFiles */,
+				A0A087551B28D2F6007AB6B6 /* inspections.csv in CopyFiles */,
+				A0A087561B28D2F8007AB6B6 /* violations.csv in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,9 @@
 		A020A8CC1B27BFAC00785A79 /* ABFRestaurantObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFRestaurantObject.m; sourceTree = "<group>"; };
 		A020A8CD1B27BFAC00785A79 /* ABFViolationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFViolationObject.h; sourceTree = "<group>"; };
 		A020A8CE1B27BFAC00785A79 /* ABFViolationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABFViolationObject.m; sourceTree = "<group>"; };
+		A0A0874E1B28D228007AB6B6 /* businesses.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = businesses.csv; sourceTree = "<group>"; };
+		A0A0874F1B28D228007AB6B6 /* inspections.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = inspections.csv; sourceTree = "<group>"; };
+		A0A087501B28D228007AB6B6 /* violations.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = violations.csv; sourceTree = "<group>"; };
 		F17CC13EA092D92E2D5176C5 /* Pods-RestaurantDataImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantDataImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantDataImporter/Pods-RestaurantDataImporter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +102,7 @@
 		A020A8BD1B27BE8D00785A79 /* RestaurantDataImporter */ = {
 			isa = PBXGroup;
 			children = (
+				A0A0874D1B28D228007AB6B6 /* raw-data */,
 				A020A8C81B27BFAC00785A79 /* objects */,
 				A020A8C51B27BFA200785A79 /* ABFRealmCSVImporter.h */,
 				A020A8C61B27BFA200785A79 /* ABFRealmCSVImporter.m */,
@@ -113,6 +123,17 @@
 			);
 			name = objects;
 			path = ../../../objects;
+			sourceTree = "<group>";
+		};
+		A0A0874D1B28D228007AB6B6 /* raw-data */ = {
+			isa = PBXGroup;
+			children = (
+				A0A0874E1B28D228007AB6B6 /* businesses.csv */,
+				A0A0874F1B28D228007AB6B6 /* inspections.csv */,
+				A0A087501B28D228007AB6B6 /* violations.csv */,
+			);
+			name = "raw-data";
+			path = "../../raw-data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

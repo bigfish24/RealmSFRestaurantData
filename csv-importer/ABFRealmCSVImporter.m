@@ -84,6 +84,16 @@
         @autoreleasepool {
             NSArray *columns = [restaurant componentsSeparatedByString:@","];
             
+            // Adjust if we have extra street
+            if (columns.count > 9) {
+                
+                NSMutableArray *mutableColumns = [NSMutableArray arrayWithArray:columns];
+                
+                [mutableColumns removeObjectAtIndex:2];
+                
+                columns = mutableColumns.copy;
+            }
+            
             ABFRestaurantObject *restaurantObject = [[ABFRestaurantObject alloc] init];
             
             for (NSInteger index = 0; index < columns.count; index++) {
@@ -122,7 +132,10 @@
                 }
             }
             
-            if (![restaurantObject.name isEqualToString:@""]) {
+            if (![restaurantObject.name isEqualToString:@""] &&
+                restaurantObject.longitude != 0 &&
+                restaurantObject.latitude != 0) {
+                
                 [realm addObject:restaurantObject];
             }
         }
