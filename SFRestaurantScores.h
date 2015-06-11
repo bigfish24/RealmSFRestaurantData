@@ -49,8 +49,8 @@ static NSString * ABFDocumentFilePathWithName(NSString *fileName)
  *
  *  @return path to SFRestaurantScores.realm
  */
-static NSString * ABFRestaurantScoresPath() {
-    
+static NSString * ABFRestaurantScoresPath()
+{
     // Move the file from bundle to the documents folder for read/write access
     if (![[NSFileManager defaultManager] fileExistsAtPath:ABFDocumentFilePathWithName(@"SFRestaurantScores.realm")]) {
         
@@ -62,14 +62,20 @@ static NSString * ABFRestaurantScoresPath() {
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
         
-        [fileManager copyItemAtPath:fileInBundle
-                             toPath:fileInDocuments
-                              error:&error];
-        
-        if (error) {
+        if (![fileManager copyItemAtPath:fileInBundle
+                                  toPath:fileInDocuments
+                                   error:&error]) {
+            
             NSLog(@"Copy File Error: %@",error.localizedDescription);
             
             error = nil;
+        }
+        
+        if (![fileManager setAttributes:@{NSFilePosixPermissions : @(0644)}
+                           ofItemAtPath:fileInDocuments
+                                  error:&error]) {
+            
+            NSLog(@"File Permission Error: %@",error.localizedDescription);
         }
     }
     
