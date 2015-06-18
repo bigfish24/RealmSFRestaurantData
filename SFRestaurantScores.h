@@ -15,6 +15,8 @@
 /**
  *  Retrieve the path for a given file name in the documents directory
  *
+ *  @param fileName the name of the file in the documents directory
+ *
  *  @return path to SFRestaurantScores.realm
  */
 static NSString * ABFDocumentFilePathWithName(NSString *fileName)
@@ -52,11 +54,13 @@ static NSString * ABFDocumentFilePathWithName(NSString *fileName)
 static NSString * ABFRestaurantScoresPath()
 {
     // Move the file from bundle to the documents folder for read/write access
-    if (![[NSFileManager defaultManager] fileExistsAtPath:ABFDocumentFilePathWithName(@"SFRestaurantScores.realm")]) {
+    NSString *fileInDocuments = ABFDocumentFilePathWithName(@"SFRestaurantScores.realm");
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:fileInDocuments]) {
         
-        NSString *fileInBundle = [[NSBundle mainBundle] pathForResource:@"SFRestaurantScores" ofType:@"realm"];
+        NSBundle *bundle = [NSBundle bundleForClass:[ABFRestaurantObject class]];
         
-        NSString *fileInDocuments = ABFDocumentFilePathWithName(@"SFRestaurantScores.realm");
+        NSString *fileInBundle = [bundle pathForResource:@"SFRestaurantScores" ofType:@"realm"];
         
         NSError *error = nil;
         
@@ -79,5 +83,5 @@ static NSString * ABFRestaurantScoresPath()
         }
     }
     
-    return ABFDocumentFilePathWithName(@"SFRestaurantScores.realm");
+    return fileInDocuments;
 }

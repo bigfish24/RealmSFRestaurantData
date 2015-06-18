@@ -10,9 +10,21 @@
 
 @class ABFRestaurantObject;
 
-typedef NS_ENUM(NSInteger, ABFInspectionType) {
+/**
+ *  The type of inspection
+ */
+typedef NS_ENUM(NSInteger, ABFInspectionType){
+    /**
+     *  An initial inspection type
+     */
     ABFInspectionTypeInitial = 0,
+    /**
+     *  A routine inspection type
+     */
     ABFInspectionTypeRoutine,
+    /**
+     *  A follow up inspection type
+     */
     ABFInspectionTypeFollowUp
 };
 
