@@ -18,7 +18,10 @@ int main(int argc, const char * argv[]) {
         
         NSString *fullPath = [NSString stringWithFormat:@"%@/SFRestaurantScores.realm",currentPath];
         
-        [RLMRealm setDefaultRealmPath:fullPath];
+        RLMRealmConfiguration *defaultConfiguration = [RLMRealmConfiguration defaultConfiguration];
+        defaultConfiguration.path = fullPath;
+        
+        [RLMRealmConfiguration setDefaultConfiguration:defaultConfiguration];
         
         [ABFRealmCSVImporter loadRestaurantData];
     }
