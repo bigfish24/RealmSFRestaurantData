@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RealmSFRestaurantData"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "San Francisco Restaurant Score Data In Realm"
   s.description  = <<-DESC
 Prebuilt Realm dataset composed of San Francisco restaurant scores
@@ -13,7 +13,7 @@ Prebuilt Realm dataset composed of San Francisco restaurant scores
   s.source       = { :git => "https://github.com/bigfish24/RealmSFRestaurantData.git", :tag => "v#{s.version}" }
   s.source_files  = "SFRestaurantScores.h", "objects/*.{h,m}"
   s.requires_arc = true
-  s.dependency "Realm"
+  s.dependency "Realm", ">=0.96"
   s.resource = "SFRestaurantScores.realm"
 
 end
